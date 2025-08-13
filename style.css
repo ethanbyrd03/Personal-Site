@@ -225,8 +225,8 @@
     bottom: 20px;
     left: 20px;
     display: flex;
-    flex-direction: row; /* This makes them horizontal */
-    gap: 15px; /* Space between icons */
+    flex-direction: row; 
+    gap: 15px; 
     z-index: 100;
 }
 
@@ -240,7 +240,6 @@
     transform: scale(1.2);
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .social__container {
         bottom: 10px;
