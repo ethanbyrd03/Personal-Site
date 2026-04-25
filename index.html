@@ -3,76 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Byrd's Portfolio</title>
+    <title>Ethan Byrd | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">ETHAN BYRD</a>
+            <a href="index.html" id="navbar__logo">EB</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">
-                        About
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/projects.html" class="navbar__links">
-                        Projects
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/resume.html" class="navbar__links">
-                        Resume
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="/contact.html" class="button">
-                        Contact
-                    </a>
-                </li>
+                <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+                <li class="navbar__item"><a href="resume.html" class="navbar__links">Resume</a></li>
+                <li class="navbar__btn"><a href="contact.html" class="button">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>Hi, I'm Ethan Byrd.</h1>
-                <p>Full-stack developer, data scientist, database admin, basketball stats nerd, and Tar Heel for life. </p>
-                <p>Working to make tomorrow better. View my <button class="homepage__btn"><a href="/projects.html" class="button">Projects</a></button>, 
-                    <button class="homepage__btn"><a href="/resume.html" class="button">Resume</a></button>, 
-                    <button class="homepage__btn"><a href="/contact.html" class="button">Contact Me</a></button>,
-                    or shoot me an email at <a href="mailto: ethanbyrd15@gmail.com">ethanbyrd15@gmail.com</a>!
-                    </p>
+ 
+    <main class="hero">
+        <div class="hero__bg-text">ETHAN</div>
+        <div class="hero__container">
+            <div class="hero__tag"><span class="mono">01 /</span> PORTFOLIO</div>
+            <h1 class="hero__name">
+                <span class="line">Ethan</span>
+                <span class="line accent">Byrd.</span>
+            </h1>
+            <p class="hero__desc">Full-stack developer · Data scientist · Database admin<br>Basketball stats nerd · Tar Heel for life.</p>
+            <div class="hero__cta">
+                <a href="projects.html" class="cta-primary">View Projects</a>
+                <a href="contact.html" class="cta-secondary">Get in Touch</a>
             </div>
         </div>
-        <div class="main">
-    <div class="main__container">
-        <div class="main__content">
+        <div class="hero__scroll-hint mono">scroll down ↓</div>
+    </main>
+ 
+    <section class="skills-strip">
+        <div class="strip-inner">
+            <span>Python</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>SQL</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
+            <span>Node.js</span><span class="dot">·</span>
+            <span>Data Analysis</span><span class="dot">·</span>
+            <span>Machine Learning</span><span class="dot">·</span>
+            <span>Git</span><span class="dot">·</span>
+            <span>PostgreSQL</span><span class="dot">·</span>
+            <span>Python</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>SQL</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
+            <span>Python</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>SQL</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
+            <span>Node.js</span><span class="dot">·</span>
+            <span>Data Analysis</span><span class="dot">·</span>
+            <span>Machine Learning</span><span class="dot">·</span>
+            <span>Git</span><span class="dot">·</span>
+            <span>PostgreSQL</span><span class="dot">·</span>
+            <span>Python</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>SQL</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
+            <span>Python</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>SQL</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
+            <span>Node.js</span><span class="dot">·</span>
+            <span>Data Analysis</span><span class="dot">·</span>
+            <span>Machine Learning</span><span class="dot">·</span>
+            <span>Git</span><span class="dot">·</span>
+            <span>PostgreSQL</span><span class="dot">·</span>
+            <span>Python</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>SQL</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
         </div>
-    </div>
-    <div class="social__container">
-        <a href="https://github.com/ethanbyrd03" target="_blank" class="social__link">
-            <img src="images/github.png" alt="GitHub" class="social__icon">
-        </a>
-        <a href="https://linkedin.com/in/ethan-byrd03" target="_blank" class="social__link">
-            <img src="images/linkedin.png" alt="LinkedIn" class="social__icon">
-        </a>
-        <a href="https://twitter.com/ethanbyrd03" target="_blank" class="social__link">
-            <img src="images/twitter.png" alt="Twitter" class="social__icon">
-        </a>
-        <a href="https://instagram.com/ethanabyrd" target="_blank" class="social__link">
-            <img src="images/instagram.png" alt="Instagram" class="social__icon">
-        </a>
-    </div>
-</div>
-    </div>
+    </section>
+ 
+    <section class="featured">
+        <div class="featured__container">
+            <div class="section-label mono">02 / FEATURED WORK</div>
+            <div class="featured__grid">
+                <a href="projects.html" class="project-card">
+                    <div class="project-card__number mono">001</div>
+                    <h3>UNC Course Projects</h3>
+                    <p>A collection of academic work spanning algorithms, data structures, and applied machine learning.</p>
+                    <span class="project-card__tag">Academic</span>
+                </a>
+                <a href="projects.html" class="project-card project-card--accent">
+                    <div class="project-card__number mono">002</div>
+                    <h3>Data Science Work</h3>
+                    <p>Statistical analysis, visualizations, and predictive models built during undergrad coursework.</p>
+                    <span class="project-card__tag">Data</span>
+                </a>
+                <a href="projects.html" class="project-card">
+                    <div class="project-card__number mono">003</div>
+                    <h3>Full-Stack Apps</h3>
+                    <p>End-to-end web applications with backend APIs, database design, and polished frontends.</p>
+                    <span class="project-card__tag">Engineering</span>
+                </a>
+            </div>
+        </div>
+    </section>
+ 
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left mono">© 2026 Ethan Byrd</div>
+            <div class="footer__socials">
+                <a href="https://github.com/ethanbyrd03" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ethan-byrd03" target="_blank">LinkedIn</a>
+                <a href="mailto:ethanbyrd15@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+ 
     <script src="app.js"></script>
 </body>
 </html>

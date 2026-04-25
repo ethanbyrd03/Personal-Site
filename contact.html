@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ethan Byrd</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">EB</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+                <li class="navbar__item"><a href="resume.html" class="navbar__links">Resume</a></li>
+                <li class="navbar__btn"><a href="contact.html" class="button active-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <div class="page-header">
+            <div class="mono section-label">04 / CONTACT</div>
+            <h1 class="page-title">Get in <span class="accent">Touch.</span></h1>
+            <p class="page-subtitle">I'm always open to new opportunities, collaborations, or just talking hoops. Drop me a line.</p>
+        </div>
+
+        <div class="contact-layout">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="mono contact-label">Email</span>
+                    <a href="mailto:ethanbyrd15@gmail.com" class="contact-value">ethanbyrd15@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="mono contact-label">GitHub</span>
+                    <a href="https://github.com/ethanbyrd03" target="_blank" class="contact-value">github.com/ethanbyrd03</a>
+                </div>
+                <div class="contact-item">
+                    <span class="mono contact-label">LinkedIn</span>
+                    <a href="https://linkedin.com/in/ethan-byrd03" target="_blank" class="contact-value">linkedin.com/in/ethan-byrd03</a>
+                </div>
+                <div class="contact-item">
+                    <span class="mono contact-label">Location</span>
+                    <span class="contact-value">Chapel Hill, NC</span>
+                </div>
+
+                <div class="contact-availability">
+                    <div class="avail-dot"></div>
+                    <span class="mono">Available for new roles & projects</span>
+                </div>
+            </div>
+
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="name" class="mono">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="mono">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="mono">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Opportunities, collaborations, or...">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="mono">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Hey Ethan, I'd love to chat about..." required></textarea>
+                </div>
+                <button type="submit" class="cta-primary form-submit">Send Message →</button>
+                <p class="form-note mono" id="form-status"></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left mono">© 2026 Ethan Byrd</div>
+            <div class="footer__socials">
+                <a href="https://github.com/ethanbyrd03" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ethan-byrd03" target="_blank">LinkedIn</a>
+                <a href="mailto:ethanbyrd15@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

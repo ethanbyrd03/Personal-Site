@@ -3,42 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Byrd's Portfolio</title>
+    <title>About | Ethan Byrd</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">ETHAN BYRD</a>
+            <a href="index.html" id="navbar__logo">EB</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">
-                        About
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/projects.html" class="navbar__links">
-                        Projects
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/resume.html" class="navbar__links">
-                        Resume
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="/contact.html" class="button">
-                        Contact
-                    </a>
-                </li>
+                <li class="navbar__item"><a href="about.html" class="navbar__links active-link">About</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+                <li class="navbar__item"><a href="resume.html" class="navbar__links">Resume</a></li>
+                <li class="navbar__btn"><a href="contact.html" class="button">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <div class="page-wrapper">
+        <div class="page-header">
+            <div class="mono section-label">01 / ABOUT</div>
+            <h1 class="page-title">About <span class="accent">Me.</span></h1>
+        </div>
+
+        <section class="about-layout">
+            <div class="about-photo-col">
+                <div class="about-img-wrap">
+                    <img src="images/headshot_1.jpg" alt="Ethan Byrd" class="about-photo" onerror="this.parentElement.classList.add('no-img')">
+                    <div class="about-img-label mono">Ethan Byrd — UNC Chapel Hill</div>
+                </div>
+            </div>
+
+            <div class="about-text-col">
+                <p class="about-intro">
+                    Hi, I'm Ethan — a developer, basketball nerd, and proud Tar Heel from Clemmons, NC.
+                </p>
+                <p class="about-body">
+                    I graduated from the University of North Carolina at Chapel Hill where I studied Computer Science with a minor in Data Science.
+                    During my time there, I developed a passion for turning data into decisions and building software
+                    that actually solves real problems.
+                </p>
+                <p class="about-body">
+                    My work spans full-stack web development, database design, and data science. Whether it's
+                    architecting a clean REST API, writing complex SQL queries, or training a predictive model,
+                    I like to build things end to end and own the whole stack.
+                </p>
+                <p class="about-body">
+                    When I'm not coding, you'll find me deep in NBA box scores, training for a 5k,
+                    or watching Carolina play.
+                </p>
+
+                <div class="about-skills">
+                    <div class="skills-col">
+                        <h4 class="mono">Languages</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript / TypeScript</li>
+                            <li>SQL</li>
+                            <li>Java</li>
+                            <li>HTML / CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skills-col">
+                        <h4 class="mono">Frameworks & Tools</h4>
+                        <ul>
+                            <li>React, Node.js</li>
+                            <li>PostgreSQL, MySQL</li>
+                            <li>pandas, scikit-learn</li>
+                            <li>Git, GitHub</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-ctas">
+                    <a href="projects.html" class="cta-primary">See My Work</a>
+                    <a href="resume.html" class="cta-secondary">View Resume</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left mono">© 2026 Ethan Byrd</div>
+            <div class="footer__socials">
+                <a href="https://github.com/ethanbyrd03" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ethan-byrd03" target="_blank">LinkedIn</a>
+                <a href="mailto:ethanbyrd15@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
