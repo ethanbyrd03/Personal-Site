@@ -8,7 +8,6 @@ if (menu && menuLinks) {
         menuLinks.classList.toggle('active');
     });
 
-    // Close menu on link click
     menuLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('is-active');
@@ -49,7 +48,6 @@ function handleFormSubmit(e) {
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    // Simulate send — replace with real backend/Formspree if desired
     setTimeout(() => {
         status.textContent = '✓ Message sent! I\'ll be in touch soon.';
         btn.textContent = 'Sent!';
